@@ -1,0 +1,24 @@
+{
+  "name": "CAU Navigator",
+  "version": "0.1.0",
+  "author": "Felix Brüning",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klefix/cau-navigator"
+  },
+  "deployConfig": {
+    "alpha": {
+      "remote" : "nodgy.com",
+      "port": "22",
+      "user": "root",
+      "cert": "/home/felix/.ssh/id_rsa",
+      "passphrase": "bc00felix",
+      "remotePath": "/var/www/meteor",
+      "ref": "origin/alpha",
+      "runPort": "3000",
+      "rootUrl": "http://nodgy.com",
+      "mongoUrl": "mongodb://localhost:27017/meteor",
+      "mailUrl": "smtp://..."
+    }
+  }
+}

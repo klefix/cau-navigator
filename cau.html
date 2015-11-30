@@ -1,0 +1,45 @@
+<head>
+    <title>cau</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!" class="location" data-place="ChIJ-9slxnJWskcRVs7WxCytJ7U">Mensa I</a></li>
+        <li><a href="#!" class="location" data-address="Mensa 2, 24118 Kiel">Mensa II</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="location" data-address="Campus Suite - Sportforum, Olshausenstraße 74, 24118 Kiel">Campus Suite - Sportforum</a></li>
+        <li><a href="#!" class="location" data-address="Sportzentrum der CAU, Olshausenstraße 71, 24118 Kiel">Sportzentrum der CAU</a></li>
+        <li><a href="#!" class="location" data-address="Audimax, Christian-Albrechts-Platz, 24118 Kiel">Audimax</a></li>
+        <li><a href="#!" class="location" data-address="Arbeitsgemeinschaft Geo- botanik in Schleswig Holstein und Hamburg e. V., Olshausenstraße 75, 24118 Kiel">ArGe Geobotanik</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="location" data-address="Kiel Wohnung, Christian-Albrechts-Universität zu Kiel, Christian-Albrechts-Platz 4, 24118 Kiel">Studentenwohnheim</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">CAU Navigator</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!">Account</a></li>
+            <!-- Dropdown Trigger -->
+            <li>
+                <a class="dropdown-button" href="#!" data-activates="dropdown1" style="width: 200px;">
+                    Locations<i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="mdl-layout__content">
+      {{> hello}}
+    </main>
+
+</body>
+
+<template name="hello">
+  <div class="map-container">
+    {{> googleMap name="exampleMap" options=exampleMapOptions}}
+  </div>
+</template>
